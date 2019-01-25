@@ -58,7 +58,10 @@ document.addEventListener("DOMContentLoaded", e => {
             })
             .then(r => r.json())
             .then(beer => {
-                console.log(beer.description)
+                console.log(textArea)
+
+                textArea.innerHTML = beer.description
+                console.log(textArea)
             })
         }
     })
